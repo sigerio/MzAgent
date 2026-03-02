@@ -1,0 +1,3 @@
+[submodule "sub/MzAgentSub"]
+	path = sub/MzAgentSub
+	url = https://github.com/sigerio/MzAgentSub.git
