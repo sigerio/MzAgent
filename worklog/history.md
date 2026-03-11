@@ -1,5 +1,9 @@
 # 历史问题索引（archive）
 
+- 标题：当前是否可直接进行软件移植评估
+  路径：worklog/archive/项目管理/20260311-006-当前是否可直接进行软件移植评估.md
+  摘要：已完成团队评估，结论为不可直接全面移植，只可按 Python Slice 1 范围进入受控首刀实现。
+
 - 标题：Python 版 Slice1 细化结论回灌讨论
   路径：worklog/archive/技术规划/20260311-009-Python版Slice1细化结论回灌讨论.md
   摘要：已完成动态字段矩阵、`transitions` 纯函数契约、跨对象一致性与 Guardrails 映射真值表收口，并正式回灌 `Slice 1` 主文档。
