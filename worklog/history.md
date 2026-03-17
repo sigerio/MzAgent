@@ -1,5 +1,85 @@
 # 历史问题索引（archive）
 
+- 标题：后端接入任务清单与执行边界确认
+  路径：worklog/archive/项目管理/20260317-002-后端接入任务清单与执行边界确认.md
+  摘要：已完成后端接入收口，补齐 round 契约扩展、capabilities CRUD、指定轮次重试与 SSE 会话流，子仓版本提升至 0.1.20。
+
+- 标题：CLI 改为 Web 端团队评审
+  路径：worklog/archive/产品规划/20260314-002-CLI改为Web端团队评审.md
+  摘要：已完成评审，确认 Web 端替代 CLI 主入口可行，保留 CLI 为调试入口，结论已落地到 Web 首版实现。
+
+- 标题：Web 端实现方案团队评审
+  路径：worklog/archive/产品规划/20260314-003-Web端实现方案团队评审.md
+  摘要：已完成评审，收敛为轻量 ASGI JSON API + 单页薄界面方案，结论已落地并迭代至 v0.1.19。
+
+- 标题：Web 端 UI 界面设计团队讨论
+  路径：worklog/archive/产品规划/20260314-004-Web端UI界面设计团队讨论.md
+  摘要：已完成首版 UI 信息结构讨论，后续用户选定 ChatGPT 风格布局替代原「单页任务控制台」方案。
+
+- 标题：按 UI TODO 逐项实施 Web 端首版
+  路径：worklog/archive/技术实现/20260314-005-按UI-TODO逐项实施Web端首版.md
+  摘要：已完成 Web 首版实施（v0.1.9），包含共享服务层、最小 API、单页界面与门禁测试，后续由全量 UI 重构接管。
+
+- 标题：当前活动任务确认
+  路径：worklog/archive/项目管理/20260314-003-当前活动任务确认.md
+  摘要：已完成一次性活动任务核对，结论已过期。
+
+- 标题：Web 端 UI 任务编排
+  路径：worklog/archive/项目管理/20260314-004-Web端UI任务编排.md
+  摘要：已完成 7 Phase UI 任务编排，后续被全量 UI 重构方案替代。
+
+- 标题：Web 端 UI TODO 清单梳理
+  路径：worklog/archive/项目管理/20260314-005-Web端UI-TODO清单梳理.md
+  摘要：已完成首版 TODO 清单梳理，后续被全量 UI 重构方案替代。
+
+- 标题：NewAPI 版 UI 审查
+  路径：worklog/archive/产品规划/20260316-009-NewAPI版UI审查.md
+  摘要：已完成 NewAPI 风格控制台硬伤修复，删除重复表单与重复状态块，并通过宿主机 Playwright 生成新截图。
+
+- 标题：参考 NewAPI 设计 Web 界面
+  路径：worklog/archive/产品规划/20260316-008-参考NewAPI设计Web界面.md
+  摘要：已完成一版参考 NewAPI 控制台分层思路的页面实现，并通过宿主机 Playwright 生成预览截图。
+
+- 标题：开源 UI 设置与对话管理借鉴
+  路径：worklog/archive/产品规划/20260316-007-开源UI设置与对话管理借鉴.md
+  摘要：已完成开源 UI 在设置管理与对话管理上的借鉴分析，并回灌到首页结构回调实现。
+
+- 标题：Git 搜索 Web 界面参考
+  路径：worklog/archive/产品规划/20260316-006-Git搜索Web界面参考.md
+  摘要：已完成 GitHub 开源 UI 参考调研，并将 AionUi、Vercel ai-chatbot、LobeChat 的优点用于本轮页面回调。
+
+- 标题：Web 界面偏离参考设计复盘
+  路径：worklog/archive/产品规划/20260316-005-Web界面偏离参考设计复盘.md
+  摘要：已完成偏差复盘与页面结构回调，首页重新对齐为顶栏概览、主工作区、辅助状态区和折叠设置。
+
+- 标题：Web 界面风格方案重选讨论
+  路径：worklog/archive/产品规划/20260316-004-Web界面风格方案重选讨论.md
+  摘要：已完成首页风格重选与实现，页面重构为清爽侧边栏布局，并通过宿主机 Playwright 生成预览截图。
+
+- 标题：Web 界面二次重构与 Playwright 预览
+  路径：worklog/archive/产品规划/20260316-003-Web界面二次重构与Playwright预览.md
+  摘要：已完成首页二次重构，并通过宿主机 Playwright 生成整页预览截图。
+
+- 标题：Playwright 预览与本地端口绑定受限排查
+  路径：worklog/archive/技术实现/20260316-003-Playwright预览与本地端口绑定受限排查.md
+  摘要：已补齐宿主机预览脚本，解决沙箱外 Web 启动与 Playwright 截图链路，生成稳定预览图。
+
+- 标题：Web 界面重设计讨论
+  路径：worklog/archive/产品规划/20260316-002-Web界面重设计讨论.md
+  摘要：已完成 Web 首页重设计，首屏收敛为响应、提问与历史工作台，连接配置改为折叠式面板。
+
+- 标题：Web 启动工具与使用入口缺失
+  路径：worklog/archive/项目管理/20260316-002-Web启动工具与使用入口缺失.md
+  摘要：已补齐 `start_web.sh`、示例环境模板与 README 最短使用路径，子仓版本提升至 0.1.11。
+
+- 标题：保留原生 provider 并新增反代 profile 与页面切换讨论
+  路径：worklog/archive/产品规划/20260316-001-保留原生provider并新增反代profile与页面切换讨论.md
+  摘要：已完成原生 provider 保留、反代 profile 配置仓、页面切换方案与本轮实现收口，子仓版本提升至 0.1.10。
+
+- 标题：LLM 接入扩展为 newapi 风格配置讨论
+  路径：worklog/archive/技术规划/20260316-001-LLM接入扩展为newapi风格配置讨论.md
+  摘要：已完成方案收敛，确认采用“保留原生 provider 驱动位 + 新增可切换反代 profile”的实现方向。
+
 - 标题：按 todo 顺序执行后续修改
   路径：worklog/archive/项目管理/20260314-002-按todo顺序执行后续修改.md
   摘要：已按顺序完成 P1 与 C1~C5 收口，默认本地回归扩展至 69 项并全绿。
