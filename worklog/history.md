@@ -1,5 +1,49 @@
 # 历史问题索引（archive）
 
+- 标题：输入到输出全链路合理性团队审核
+  路径：worklog/archive/技术实现/20260319-007-输入到输出全链路合理性团队审核.md
+  摘要：已完成基于 `cunzhi` 问题的全链路审核，并实施 `respond_with_llm / expect_user_followup` 分支优先级修正，补入同轮 LLM 收口测试。
+
+- 标题：cunzhi 结果未正常回流 LLM 收口
+  路径：worklog/archive/技术实现/20260319-006-cunzhi结果未正常回流llm收口.md
+  摘要：已改为在 `respond_with_llm = true` 时保留待续交互并继续同轮 LLM 收口，子仓版本提升至 0.1.35。
+
+- 标题：用户消息发送后输入框未清空
+  路径：worklog/archive/技术实现/20260319-005-用户消息发送后输入框未清空.md
+  摘要：已改为发送后立即清空输入框，请求失败时回填原输入并恢复提交前历史与状态，子仓版本提升至 0.1.34。
+
+- 标题：cunzhi 特化导致编排失真排查
+  路径：worklog/archive/技术实现/20260318-010-cunzhi特化导致编排失真排查.md
+  摘要：已移除 `cunzhi` 服务名硬编码触发，`auto` 改为统一由 LLM 路由，MCP 追问后的下一轮输入重新回流主链。
+
+- 标题：添加模型后按钮布局 UI 评审
+  路径：worklog/archive/技术实现/20260318-004-添加模型后按钮布局UI评审.md
+  摘要：已完成设置抽屉按钮组间距微调与预览，当前按现有效果收口归档。
+
+- 标题：移除 default 模型选项与空态隐藏
+  路径：worklog/archive/技术实现/20260318-003-移除default模型选项与空态隐藏.md
+  摘要：已移除前端内置 `default` 占位项，并在可用模型或启用模型为空时隐藏对应选择区块。
+
+- 标题：cunzhi 调用失败 asyncio 事件循环冲突排查
+  路径：worklog/archive/技术实现/20260318-009-cunzhi调用失败asyncio事件循环冲突排查.md
+  摘要：已完成 MCP stdio 事件循环桥接修复，Web 场景下不再嵌套调用 `asyncio.run()`，真实 cunzhi 调用已验证恢复成功。
+
+- 标题：Web 输入未触发 cunzhi MCP 调用排查
+  路径：worklog/archive/技术实现/20260318-008-Web输入未触发cunzhiMCP调用排查.md
+  摘要：已完成 auto 链式编排修复，显式 cunzhi 请求优先尝试 MCP，任一中间节点异常也不再阻断后续节点与最终 LLM 答复。
+
+- 标题：Web 输入未与真实 LLM 交互排查
+  路径：worklog/archive/技术实现/20260318-007-Web输入未与真实LLM交互排查.md
+  摘要：已完成 auto 编排后的 LLM 强制收口修复，空 skills 可回退 LLM，真实 Web roundtrip 已验证最终返回 llm。
+
+- 标题：输入框支持 Ctrl+Enter 发送
+  路径：worklog/archive/技术实现/20260318-006-输入框支持Ctrl加Enter发送.md
+  摘要：已完成 Web 输入框 Ctrl+Enter 快捷发送实现，保留普通 Enter 换行，并生成 Playwright 预览截图。
+
+- 标题：LLM 真实 URL 测试失败与无法交互排查
+  路径：worklog/archive/技术实现/20260318-005-LLM真实URL测试失败与无法交互排查.md
+  摘要：已完成真实 LLM URL 修复，补齐默认 User-Agent 与 Responses 参数兼容性，真实联调与 CLI 交互均已恢复。
+
 - 标题：NewAPI 多厂商模型切换方案讨论
   路径：worklog/archive/技术规划/20260318-008-NewAPI多厂商模型切换方案讨论.md
   摘要：已完成按模型协议保存与运行时分发改造，当前支持 `openai-responses`、`openai-completions`、`anthropic-messages` 三条链路。
